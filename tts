@@ -1,0 +1,7 @@
+from gtts import gTTS
+import playsound
+import os
+tts = gTTS (text = 'ata gache tota pakhi', lang = 'bn')
+tts.save ("good.mp3")
+os.system ("mpg321 good.mp3")
+playsound.playsound ('good.mp3', True)
